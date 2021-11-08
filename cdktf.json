@@ -2,7 +2,6 @@
     "language": "go",
     "app": "go run main.go",
     "codeMakerOutput": "generated",
-    "projectId": "53d8ddba-20ab-45e0-857b-044f33eb9c41",
     "terraformProviders": [
 	"hashicorp/azurerm@~> 2"
     ],
