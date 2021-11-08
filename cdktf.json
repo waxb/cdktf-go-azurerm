@@ -1,0 +1,25 @@
+{
+    "language": "go",
+    "app": "go run main.go",
+    "codeMakerOutput": "generated",
+    "projectId": "53d8ddba-20ab-45e0-857b-044f33eb9c41",
+    "terraformProviders": [
+	"hashicorp/azurerm@~> 2"
+    ],
+    "terraformModules": [
+	{
+	   "name": "naming",
+           "source": "Azure/naming/azurerm",
+           "version": "0.1.1"
+	},
+	{
+	   "name": "nullmodule",
+           "source": "vancluever/module/null",
+           "version": "2.0.2"
+	}
+    ],
+    "context": {
+        "excludeStackIdFromLogicalIds": "true",
+	"allowSepCharsInLogicalIds": "true"
+    }
+}
