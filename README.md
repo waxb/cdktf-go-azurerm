@@ -18,6 +18,7 @@ git clone https://github.com/waxb/cdktf-go-azurerm.git && cd cdktf-go-azurerm
 NODE_OPTIONS='--max_old_space_size=16384' cdktf get
 ```
 If you don't have 16GBs of memory, you can get the generated go provider from [here](https://github.com/waxb/azurerm)
+
 Go to the directory where this repository was cloned:
 ```
 mkdir -p generated/hashicorp && cd $_
@@ -30,12 +31,12 @@ cdktf deploy
 ```
 
 ## Covered examples
-* Provider initialisation [1](https://github.com/waxb/cdktf-go-azurerm/blob/cd4a46ebc590088ab39967281b578a954db1a1cd/main.go#L16)
+* Provider initialisation [1](https://github.com/waxb/cdktf-go-azurerm/blob/cd4a46ebc590088ab39967281b578a954db1a1cd/main.go#L16) [2]()
 * Module instance creation [1](https://github.com/waxb/cdktf-go-azurerm/blob/cd4a46ebc590088ab39967281b578a954db1a1cd/main.go#L21) [2](https://github.com/waxb/cdktf-go-azurerm/blob/cd4a46ebc590088ab39967281b578a954db1a1cd/main.go#L28) (Null Module at the moment because of limitations, [see](https://github.com/Azure/terraform-azurerm-naming/issues/64))
 * Resource creation and reference [1](https://github.com/waxb/cdktf-go-azurerm/blob/cd4a46ebc590088ab39967281b578a954db1a1cd/main.go#L35) [2](https://github.com/waxb/cdktf-go-azurerm/blob/cd4a46ebc590088ab39967281b578a954db1a1cd/main.go#L42) [3](https://github.com/waxb/cdktf-go-azurerm/blob/cd4a46ebc590088ab39967281b578a954db1a1cd/main.go#L49) [4](https://github.com/waxb/cdktf-go-azurerm/blob/cd4a46ebc590088ab39967281b578a954db1a1cd/main.go#L57) [5](https://github.com/waxb/cdktf-go-azurerm/blob/cd4a46ebc590088ab39967281b578a954db1a1cd/main.go#L69)
-* Terraform built in [function](https://www.terraform.io/docs/language/functions/file.html) usage [1]((https://github.com/waxb/cdktf-go-azurerm/blob/cd4a46ebc590088ab39967281b578a954db1a1cd/main.go#L79))
-* Module output reference [1]((https://github.com/waxb/cdktf-go-azurerm/blob/cd4a46ebc590088ab39967281b578a954db1a1cd/main.go#L97))
-* Multiple outputs [1]((https://github.com/waxb/cdktf-go-azurerm/blob/cd4a46ebc590088ab39967281b578a954db1a1cd/main.go#L97))
+* Terraform built in [function](https://www.terraform.io/docs/language/functions/file.html) usage [1]((https://github.com/waxb/cdktf-go-azurerm/blob/cd4a46ebc590088ab39967281b578a954db1a1cd/main.go#L79)
+* Module output reference [1]((https://github.com/waxb/cdktf-go-azurerm/blob/cd4a46ebc590088ab39967281b578a954db1a1cd/main.go#L97)
+* Multiple outputs [1]((https://github.com/waxb/cdktf-go-azurerm/blob/cd4a46ebc590088ab39967281b578a954db1a1cd/main.go#L97)
 
 ## Cleanup
 Do not forget to clean up the mess we've caused at microsoft, they have enough money and overused compute resources already!
