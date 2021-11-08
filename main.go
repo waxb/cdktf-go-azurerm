@@ -75,7 +75,7 @@ func NewMyStack(scope constructs.Construct, id string) cdktf.TerraformStack {
 		NetworkInterfaceIds: &[]*string{vm_nic.Id()},
 
 		AdminSshKey: &[]*azurerm.LinuxVirtualMachineAdminSshKey{{
-			Username:  jsii.String("adminuser"),
+			Username:  jsii.String("glados"),
 			PublicKey: cdktf.Fn_File(jsii.String("~/.ssh/id_rsa.pub")),
 		}},
 
